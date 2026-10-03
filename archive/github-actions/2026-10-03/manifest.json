@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "repository": "tanshuai/sccache",
+  "repository_id": 465540895,
+  "date": "2026-10-03",
+  "source_sha": "3f318a8675e4c3de4f5e8ab2d086189f2ae5f5cf",
+  "entries": [
+    {
+      "original_path": ".github/workflows/ci.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/workflows/ci.yml",
+      "source_blob_sha": "7856de4c4e9fe8c6684e81dda0d3a18b70d53dbc",
+      "sha256": "ba1c90335b74e0678057410cbb514cab9d310959c48e724627be840a7571ac22",
+      "workflow_id": null,
+      "workflow_state_before": null,
+      "business_consumer": "Inherited upstream-only automation from diem/sccache",
+      "retirement_reason": "No current custom development/deployment consumer identified; owner-approved archival of inherited fork automation; preserve source and passive security alerts",
+      "config_finding_ids": [
+        "CFG-001",
+        "CFG-006",
+        "CFG-008",
+        "CFG-017"
+      ],
+      "secret_names": [
+        "GITHUB_TOKEN"
+      ],
+      "external_entrypoint_types": [],
+      "local_dependency_paths": [
+        ".github/actions/rust-toolchain/action.yml"
+      ],
+      "restore": "Restore archived YAML and the listed dependency snapshots in a reviewed PR; validate runtime/action versions, consumers and write destinations before explicitly re-enabling the original workflow ID."
+    }
+  ],
+  "code_and_dependency_snapshots": [
+    {
+      "original_path": ".github/actions/rust-toolchain/action.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/actions/rust-toolchain/action.yml",
+      "source_blob_sha": "d94292b63de763519d2eb2b4ed08c936d06c4820",
+      "sha256": "1e36cfc86d7b25680fcb71efb4bcc433384df86b172f5789340be580e2382936",
+      "original_retained": true,
+      "reason": "workflow-local/direct code or dependency configuration copied for recovery; shared source left in place"
+    },
+    {
+      "original_path": "Cargo.lock",
+      "archived_path": "archive/github-actions/2026-10-03/Cargo.lock",
+      "source_blob_sha": "3e99b431ab219470f49c6efd27ccb300e9777826",
+      "sha256": "ae9387e4c7aba032a7e724e3ad6fbc9d312069042efbffa3aed10e9111dca86e",
+      "original_retained": true,
+      "reason": "workflow-local/direct code or dependency configuration copied for recovery; shared source left in place"
+    },
+    {
+      "original_path": "Cargo.toml",
+      "archived_path": "archive/github-actions/2026-10-03/Cargo.toml",
+      "source_blob_sha": "13cbf6962e2a3083050c88a38b6a10f2010389a4",
+      "sha256": "d0049831ce5d1d4d61d2b40e2c4baa03aa1b8de2ae1f639e54bb7768de204cf8",
+      "original_retained": true,
+      "reason": "workflow-local/direct code or dependency configuration copied for recovery; shared source left in place"
+    }
+  ],
+  "upstream_preflight": {
+    "parent": "diem/sccache",
+    "source_sha": "3f318a8675e4c3de4f5e8ab2d086189f2ae5f5cf",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "status": "identical",
+    "retained_runs": 0,
+    "semantic_note": "Current entrypoints reviewed individually; only inherited upstream CI/tests/releases/doc generators, no custom fork commits or live production consumer identified. No repository Actions enabling or passive alert changes."
+  },
+  "caller_check": {
+    "current_all_accessible_workflows": 286,
+    "remaining_reusable_callers": [],
+    "external_dispatch_note": "Declared dispatch/manual entrypoints recorded; entire retired source preserved. No dispatch APIs were invoked."
+  },
+  "passive_security_alerts": "No alert setting changed. Archived version-update YAML is no longer active configuration.",
+  "rollback": "Reviewed source restoration plus explicit workflow enablement; for unsafe cross-repository publishers establish an updated producer/consumer contract and guarded destination before restoring."
+}
